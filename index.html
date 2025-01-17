@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.N.A.R.D.</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="R.E.N.A.R.D. - Le site de l'environnement en Ile-de-France">
+    
+    <!-- Préchargement des ressources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+
+</head>
+<body>
+
+    
+    <!-- Barre de progression de défilement -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <img src="media/image/logo-site-renard.png" alt="Logo du renard" class="loader-logo">
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="content" class="hidden">
+        <!-- Header de navigation -->
+        <header class="nav-header">
+            <!-- Menu Burger -->
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Bouton Adhérer -->
+            <button class="adhesion-button">
+                <i class="fa-solid fa-user"></i>
+                <a href="adhesion/index.html"><span>Adhérer</span></a>
+            </button>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Noustrouver/index.html">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Nous trouver</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Nouscontacter/index.html">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Nous contacter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Autrespages/index.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Autres pages</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Background animé -->
+        <div class="video-background">
+            <img src="media/video/pageaccueilvideo.gif" 
+                 alt="Background animation" 
+                 class="background-gif" 
+                 loading="lazy">
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Contenu principal -->
+        <main class="home-content first-section">
+            <h1 class="title animate-write">R.E.N.A.R.D.</h1>
+            <div class="title-full animate-fade"><span class="color-accent">R</span>assemblement pour l'<span class="color-accent">E</span>tude de la <span class="color-accent">N</span>ature et l'<span class="color-accent">A</span>ménagement de <span class="color-accent">R</span>oissy et son <span class="color-accent">D</span>istrict</div>
+            <div class="cta-container">
+                <a href="Nouscontacter/index.html" class="cta-button">
+                    <span>Nous contacter</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Indicateur de défilement -->
+            <div class="scroll-indicator">
+                <i class="fa-solid fa-chevron-down fa-2x"></i>
+            </div>
+        </main>
+
+        <!-- Section suivante (à compléter) -->
+        <div class="following-content">
+            <section class="partners animate-on-scroll">
+                <div class="partners-container">
+                    <h2 class="animate-fade">Nos partenaires</h2>
+                    <div class="cards-container animate-fade">
+                        <!-- France Nature Environnement -->
+                        <div class="card">
+                            <img src="media/image/Logo-FNE-h100.png" alt="France Nature Environnement" class="card-image">
+                            <div class="card-content">
+                                <h3>France Nature Environnement</h3>
+                                <p>Fédération Française des Sociétés de Protection de la Nature</p>
+                                <a href="https://fne.asso.fr/" target="_blank" class="contact-button">
+                                    <button class="button">
+                                        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                                        </svg>
+                                        Explore
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!-- France Nature Environnement Ile-de-France -->
+                        <div class="card">
+                            <img src="media/image/Logo_Horizontal_IDF_200.png" alt="France Nature Environnement Ile-de-France" class="card-image">
+                            <div class="card-content">
+                                <h3>France Nature Environnement Ile-de-France</h3>
+                                <p>France Nature Environnement Île-de-France est la fédération régionale des associations de protection de la nature et de l’environnement en Île-de-France. </p>
+                                <a href="https://fne-idf.fr" target="_blank" class="contact-button">
+                                    <button class="button">
+                                        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                                        </svg>
+                                        Explore
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!-- Conservatoire des Espaces Naturels d'Ile-de-France -->
+                        <div class="card">
+                            <img src="media/image/logo_cen_ile_de_france-h100.jpg" alt="Conservatoire des Espaces Naturels d'Ile-de-France" class="card-image">
+                            <div class="card-content">
+                                <h3>Conservatoire des Espaces Naturels d'Ile-de-France</h3>
+                                <p>Le conservatoire achète des terrains avec vos dons pour les protéger.</p>
+                                <a href="https://www.cen-idf.fr" target="_blank" class="contact-button">
+                                    <button class="button">
+                                        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                                        </svg>
+                                        Explore
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+            
+                        <!-- G.R.A.I.N.E. Ile-de-France -->
+                        <div class="card">
+                            <img src="media/image/Logo-GRAINE.jpg" alt="GRAINE Ile-de-France" class="card-image">
+                            <div class="card-content">
+                                <h3>G.R.A.I.N.E. Ile-de-France</h3>
+                                <p>Groupe Régional d’Animation et d’Initiation à la Nature et à l’Environnement.</p>
+                                <a href="https://graine-idf.org/" target="_blank" class="contact-button">
+                                    <button class="button">
+                                        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+                                        </svg>
+                                        Explore
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="renard-protection animate-on-scroll">
+                <div class="renard-protection-container">
+                    <h2 class="animate-fade">Le R.E.N.A.R.D. et la protection de l'environnement</h2>
+                    <p class="intro-text animate-fade">
+                        Le R.E.N.A.R.D. concourt à la protection de la nature, du cadre de vie et de l'environnement par la concertation, l'animation, l'information et tous les moyens légaux à sa disposition.
+                    </p>
+                    <div class="protection-grid animate-fade">
+                        <!-- Protection de la flore et faune -->
+                        <div class="grid-item">
+                            <img src="media/image/seconde-section/fauneetflore.jpg" alt="Protection flore et faune" class="hover-effect">
+                            <div class="text-content">
+                                <h3>Protection de la flore et de la faune sauvage</h3>
+                                <p>Nous veillons à préserver la biodiversité et à protéger les habitats naturels essentiels pour la survie des espèces.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Gestion des déchets -->
+                        <div class="grid-item">
+                            <img src="media/image/seconde-section/dechetsauv1R.jpg" alt="Gestion des déchets" class="hover-effect">
+                            <div class="text-content">
+                                <h3>Gestion des déchets</h3>
+                                <p>Nous sensibilisons à une gestion plus responsable des déchets pour éviter des décharges sauvages telles que celle-ci.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Respect des milieux naturels -->
+                        <div class="grid-item">
+                            <img src="media/image/seconde-section/MillieuxNaturelMaisonsRurales.jpg" alt="Respect des milieux naturels" class="hover-effect">
+                            <div class="text-content">
+                                <h3>Respect des milieux naturels</h3>
+                                <p>Nous travaillons pour que les aménagements respectent et s'intègrent harmonieusement dans les milieux naturels.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Protection des arbres et forêts -->
+                        <div class="grid-item">
+                            <img src="media/image/seconde-section/protectionarbreforet.jpg" alt="Protection des arbres et forêts" class="hover-effect">
+                            <div class="text-content">
+                                <h3>Protection des arbres et des forêts</h3>
+                                <p>La préservation des forêts et des arbres est primordiale pour maintenir l'équilibre naturel et lutter contre le changement climatique.</p>
+                            </div>
+                        </div>         
+            
+                        <!-- Connaissances scientifiques -->
+                        <div class="grid-item">
+                            <img src="media/image/seconde-section/connaissancesscientifiques.jpg" alt="Connaissances scientifiques" class="hover-effect">
+                            <div class="text-content">
+                                <h3>Connaissances scientifiques en environnement</h3>
+                                <p>Nos actions s'appuient sur des études scientifiques pour prendre en compte l'impact environnemental et pour agir efficacement.</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="results-section animate-fade">
+                        <h3>Quelques-uns des résultats de nos actions :</h3>
+                        <ul>
+                            <li>L'arrêté préfectoral de protection du biotope de l'étang de Beaubourg</li>
+                            <li>La liaison naturelle entre les forêts de Notre-Dame et d'Armainvilliers</li>
+                            <li>L'aménagement de la lisière de la forêt de Ferrières à Roissy-en-Brie</li>
+                            <li>La préservation des ormes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="awards-section">
+                <h2>Récompenses et distinctions</h2>
+                
+                <div class="awards-content">
+                    <img src="media/image/Ann-Eur-Envt1987-BR.jpg" alt="Label Année Européenne de l'Environnement">
+                    
+                    <div class="awards-text">
+                        <p><strong>Label Année Européenne de l'Environnement</strong></p>
+                        <p>(Comité français, le 17 février 1988)</p>
+                        
+                        <p><strong>Premier prix du Paysage et de l'Environnement</strong></p>
+                        <p>(Conseil Général de Seine-et-Marne, le 26 juin 1992)</p>
+                        
+                        <p><strong>Trophées Franciliens de l'Environnement</strong></p>
+                        <p>(Conseil Régional d'Ile-de-France, le 21 octobre 1999)</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="expertise-carousel">
+                <h2>Nos compétences sur les milieux naturels et en matière d'urbanisme</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="media/image/troisieme-section/initiation-pedago.jpg" alt="Initiation pédagogique" class="carousel-image">
+                            <h3><strong>Initiation pédagogique</strong></h3>
+                            <p>Sorties naturalistes pour tous, interventions dans les écoles, et formations sur l'environnement pour sensibiliser à la protection de la nature.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/image/troisieme-section/debat-public.jpg" alt="Débats publics" class="carousel-image">
+                            <h3><strong>Les débats publics, la consultation, la concertation</strong></h3>
+                            <p>Participation active aux réunions avec nos partenaires : administrations, élus, industriels, associations.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="media/image/troisieme-section/enquete-publique.jpg" alt="Enquêtes publiques" class="carousel-image">
+                            <h3><strong>Les enquêtes publiques</strong></h3>
+                            <p>Depuis plus de 20 ans, nous répondons aux enquêtes sur les projets d'aménagement locaux avec des propositions pour mieux prendre en compte l'environnement.</p>
+                        </div>
+                    </div>
+                    <!-- Boutons de navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <section class="join-us-section">
+                <h2>La force du R.E.N.A.R.D. c'est votre adhésion !</h2>
+                <p class="join-text">
+                    Rejoignez-nous et participez à nos activités et à nos actions.<br>
+                    Nous éditons des brochures sur l'environnement, des fiches pour vous aider dans vos actions.<br>
+                    Faites connaître votre association ! Notre local, son matériel et sa documentation sont à votre disposition.
+                </p>
+                <div class="button-container">
+                    <a href="adhesion/index.html" class="join-button">
+                        <button class="btn-primary">
+                            <span>Adhérer</span>
+                        </button>
+                    </a>
+                    <a href="Noustrouver/index.html" class="join-button">
+                        <button class="btn-secondary">
+                            <span>Nous trouver</span>
+                        </button>
+                    </a>
+                </div>
+            </section>
+            
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p><strong>R.E.N.A.R.D.</strong></p>
+                <p>Le Bois Briard<br>3 rue des Aulnes<br>77680 ROISSY-EN-BRIE</p>
+                <p>Tél : 01 60 28 03 04<br>Fax : 09 72 52 59 63</p>
+            </div>
+        
+            <div class="footer-association">
+                <p>Association loi 1901 créée le 24 novembre 1978</p>
+                <p>Agréée de protection de l'environnement (article L.141-1 du Code de l'Environnement) pour la Région Ile-de-France</p>
+                <p>Association sans but lucratif, d'intérêt général, indépendante de toute obédience politique ou religieuse habilitée à participer au débat sur l'environnement (article L.141-3 du même Code) en Région Ile-de-France agréée de Jeunesse et d'Éducation Populaire</p>
+                <p>(Les photos et dessins présentés appartiennent à l'association et ne sont pas libres de droit)</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script defer src="main.js"></script>
+</body>
+</html>
