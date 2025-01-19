@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.N.A.R.D. • Nous Trouver</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="R.E.N.A.R.D. - Le site de l'environnement en Ile-de-France">
+    
+    <!-- Préchargement des ressources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+
+</head>
+<body>
+
+    
+    <!-- Barre de progression de défilement -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <img src="media/image/logo-site-renard.png" alt="Logo du renard" class="loader-logo">
+    </div>
+
+    <!-- Contenu principal -->
+    <div id="content" class="hidden">
+        <!-- Header de navigation -->
+        <header class="nav-header">
+            <!-- Menu Burger -->
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Bouton Adhérer -->
+            <button class="adhesion-button">
+                <i class="fa-solid fa-user"></i>
+                <a href="../adhesion/index.html"><span>Adhérer</span></a>
+            </button>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Nous trouver</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Nouscontacter/index.html">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Nous contacter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../Autrespages/index.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Autres pages</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Section principale -->
+        <div class="following-content">
+            <!-- Section Nous Trouver -->
+            <section class="nous-trouver-container">
+                <div class="contact-info">
+                    <h1>Nous Trouver</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>Maison de la Nature - Local du R.E.N.A.R.D.</p>
+                    <p>Le Bois Briard, 3 rue des Aulnes</p>
+                    <p>ROISSY-EN-BRIE</p>
+                </div>
+                <div class="map-container" id="map"></div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p><strong>R.E.N.A.R.D.</strong></p>
+                <p>Le Bois Briard<br>3 rue des Aulnes<br>77680 ROISSY-EN-BRIE</p>
+                <p>Tél : 01 60 28 03 04<br>Fax : 09 72 52 59 63</p>
+            </div>
+        
+            <div class="footer-association">
+                <p>Association loi 1901 créée le 24 novembre 1978</p>
+                <p>Agréée de protection de l'environnement (article L.141-1 du Code de l'Environnement) pour la Région Ile-de-France</p>
+                <p>Association sans but lucratif, d'intérêt général, indépendante de toute obédience politique ou religieuse habilitée à participer au débat sur l'environnement (article L.141-3 du même Code) en Région Ile-de-France agréée de Jeunesse et d'Éducation Populaire</p>
+                <p>(Les photos et dessins présentés appartiennent à l'association et ne sont pas libres de droit)</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script defer src="main.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4TGh6FFJZ0L_R8mdi3VW5QQF9yTwmpWA&callback=initMap"></script>
+</body>
+</html>
